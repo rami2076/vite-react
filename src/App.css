@@ -29,7 +29,7 @@
 
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+    animation: beat-and-rotation infinite 20s linear;
   }
 }
 
@@ -39,4 +39,9 @@
 
 .read-the-docs {
   color: #888;
+}
+
+@keyframes beat-and-rotation {
+  0%, 50%, 100% { transform:rotate(0deg) scale(1, 1); }
+  30%, 80% { transform: rotate(360deg) scale(0.52, 0.55); }
 }
